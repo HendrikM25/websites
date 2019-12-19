@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="90px" height="92px" viewBox="0 0 90 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
     <title>medium_hover</title>
     <desc>Created with Sketch.</desc>
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD" transform="translate(-1276.000000, -675.000000)">
-            <g id="social_media_row" transform="translate(1229.000000, 52.500000)">
-                <g id="social_media_icons" transform="translate(47.000000, 510.500000)"></g>
+        <g id="Desktop-HD" transform="translate(-1276.000000, -676.000000)">
+            <g id="social_media_row" transform="translate(1229.000000, 111.500000)">
+                <g id="social_media_icons" transform="translate(47.000000, 451.500000)">
+                    <g id="medium_hover" transform="translate(0.000000, 113.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="90" height="90"></rect>
+                        <circle id="Oval" stroke="#730D0D" stroke-width="2" cx="45" cy="45" r="44"></circle>
+                        <path d="M65.8064516,33.879233 L64.1998121,33.879233 C63.6031945,33.879233 62.7575947,34.7607195 62.7575947,35.3251591 L62.7575947,55.7530689 C62.7575947,56.3175085 63.6031945,57.0861071 64.1998121,57.0861071 L65.8064516,57.0861071 L65.8064516,61.9354839 L51.2409959,61.9354839 L51.2409959,57.0861071 L54.2898528,57.0861071 L54.2898528,35.6109817 L54.1418728,35.6109817 L47.0223927,61.9354839 L41.511901,61.9354839 L34.4840276,35.6109817 L34.3055121,35.6109817 L34.3055121,57.0861071 L37.3543689,57.0861071 L37.3543689,61.9354839 L25.1612903,61.9354839 L25.1612903,57.0861071 L26.723301,57.0861071 C27.3668963,57.0861071 28.2101472,56.3175085 28.2101472,55.7530689 L28.2101472,35.3251591 C28.2101472,34.7607195 27.3668963,33.879233 26.723301,33.879233 L25.1612903,33.879233 L25.1612903,29.0322581 L40.4079236,29.0322581 L45.4157532,48.0814941 L45.5519887,48.0814941 L50.6044472,29.0322581 L65.8064516,29.0322581 L65.8064516,33.879233" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
             </g>
         </g>
     </g>

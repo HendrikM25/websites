@@ -2,31 +2,53 @@
     <header>
         <title>hendrikm.com</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
     </header>
 
     <body>
-        <div class="view">
-            <div class="header">
-                <img src="images/header.svg" alt="header" class="responsive">
+        <div class="content">
+            <div class="row">
+                <div class="col-12 col-s-12">
+                    <img src="images/header.svg" class="header" alt="header">
+                </div>
             </div>
-            <div class="content">
-                <div class="profile_outline">
-                    <img src="images/profile_outline.svg" alt="profile_outline" class="responsive">
-                </div>
-                <div class="anim_text">
-                    
-                </div>
-                <div class="social_bar">
-                    <div class="icons">
-                        <img src="images/github.svg" alt="github" class="github">
-                        <img src="images/medium.svg" alt="medium" class="medium">
-                        <img src="images/instagram.svg" alt="instagram" class="instagram">
+
+            <div class="row">
+                <div class="col-12 col-s-12 anim_text">
+                    <div class="typewriter">
+                        <h1>Learn. Plan. Create.</h1>
                     </div>
-        
-                    <div class="red_lines">
-                        <img src="images/red_lines.svg" alt="red_lines">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-s-9">
+                    <img src="images/profile_outline.svg" class="profile" alt="profile_outline">
+                </div>
+
+                <div class="col-3 col-s-1">
+                    <div class="spaceholder"></div>
+                </div>
+
+                <div class="col-2 col-s-2">
+                    <div class="social">
+                        <a href="https://github.com/HendrikM25">
+                            <div class="github icons"></div>
+                        </a>
+                        <a href="https://medium.com/@hplusm">
+                            <div class="medium icons"></div>
+                        </a>
+                        <a href="https://www.instagram.com/hendrikm25_/">
+                            <div class="instagram icons"></div>
+                        </a>
                     </div>
+
+                    <p class="copyright">© Hendrik Müller</p>
+                </div>
+
+                <div class="col-1" id="lines">
+                    <img src="images/red_lines.svg" class="red_lines" alt="red_lines">
                 </div>
             </div>
         </div>

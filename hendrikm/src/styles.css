@@ -1,104 +1,201 @@
-body {
-    height: 100%;
-    background-color: #161515;
+* {
+    box-sizing: border-box;
+    margin: 0 auto;  
 }
 
-.view {
-    display: grid;
-    grid-template-rows: repeat(12, 1fr);
-    align-items: center;
+body {
+    background-color: #161515;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    .red_lines {
+        display: none;
+    }
+
+    .social {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .copyright {
+        float: center;
+        position: relative;
+        left: 38%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .social {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        position: relative;
+        top: 100px;
+    }
+
+    .copyright {
+        float: center;
+        position: relative;
+        top: 180px;
+        left: 10px;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .social {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        position: relative;
+        top: 100px;
+    }
+
+    .profile {
+        margin-top: auto;
+    }
+
+    .copyright {
+        font-size: auto;
+        float: right;
+        position: relative;
+        top: 180px;
+    }
+}
+
+
+[class*="col-"] {
+    float: left;
+    bottom: 0;
+    min-height: 1px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    grid-row-start: span 2;
-    margin-top: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.content {
-    grid-row-start: span 10;
-    margin-top: 0px;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;    
-}
-
-.responsive {
-    width: 100%;
+img {
+    max-width: 100%;
     height: auto;
-}
-
-.content {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    margin-top: 0px;
-}
-
-.header .responsive {
-    max-height: 70px;
-}
-
-.profile_outline {
-    grid-column-start: span 4;
-    margin-left: 40px;
-}
-
-.profile_outline .responsive {
-    max-height: 650px;
-}
-
-.anim_text {
-    grid-column-start: span 4;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.social_bar {
-    grid-column-start: span 4;
-    margin-right: 40px;
-}
-
-
-.social_bar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    margin: 0px;
-}
-
-.icons {
-    grid-column-start: span 1;
-    margin-right: 0px;
+    max-height: 1000px;
 }
 
 .red_lines {
-    grid-column-start: span 1;
-    margin-left: 0px;
+    float: right;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 150px;
+    position: relative;
+    top: -120px;
 }
 
 .icons {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    margin-top: 0px;
-    margin-right: 0px
+    margin: 5px;
 }
 
 .github {
-    grid-row-start: span 1;
-    margin-bottom: 20px;
+    background: url(images/github.svg) no-repeat;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
+
+.github:hover {
+    background: url(images/github_hover.png) no-repeat;
 }
 
 .medium {
-    grid-row-start: span 1;
-    margin-bottom: 20px;
+    background: url(images/medium.svg) no-repeat;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
+
+.medium:hover {
+    background: url(images/medium_hover.svg);
 }
 
 .instagram {
-    grid-row-start: span 1;
-    margin-bottom: 20px;
+    background: url(images/instagram.svg) no-repeat;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
 }
 
+.instagram:hover {
+    background: url(images/instagram_hover.svg) no-repeat;
+}
+
+.spaceholder {
+    background-color: #161515;
+    width: 100%;
+}
+
+.anim_text {
+    margin-bottom: 40px;
+}
+
+.typewriter h1  {
+    font-size: 24pt;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #730D0D; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite; 
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #730D0D; }
+  }
